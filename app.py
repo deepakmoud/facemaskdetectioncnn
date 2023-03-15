@@ -13,7 +13,7 @@ from keras.applications.vgg16 import preprocess_input
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Loading saved model from Drive.
 from keras.models import load_model
-model = load_model('/content/drive/My Drive/Deep Learning FDP/dataset/FDPCNN1.h5')
+model = load_model('FDPCNN1.h5')
 
 html_temp = """
    <div class="" style="background-color:blue;" >
@@ -51,7 +51,7 @@ def import_and_predict(image_data):
     prediction = "Person without Mask" 
     print(prediction)
   else:
-    prediction = 'Person  with Mask'
+    prediction = 'Person with Mask'
     print(prediction)#x = np.expand_dims(x, axis=1)
   
   
